@@ -1,5 +1,6 @@
 """
 Chronos:
+Chronos is a productivity desktop app used to assist users stay focused by restricting their access to unproductive applications that procrastinate and waste precious time.
 
 step 1: Connecting Leetcode data to our code
 
@@ -19,11 +20,14 @@ step 4: Track how long a problem was worked on
 
 
 import requests # lets python send web requests aka Leetcode API call
-
 import time # for using time.time() to get current time in seconds
 from datetime import datetime # for turning timestamps into reable dates
 
 Base_URL = "https://alfa-leetcode-api.onrender.com"
+def welcome_chronos():
+    print(f"Welcome to Chronos\n")
+    print(f"Your personal productivity game changer\n")
+
 
 def ask_username():
     username = input("Type your Leetcode username: ").strip() # strip removes accidental spaces
@@ -49,6 +53,7 @@ def is_unlocked(submissions, window=3600):
     return False
     
 def main():
+    welcome_chronos()
 
     username = ask_username() 
     subs = fetch_accepted(username)
@@ -60,8 +65,5 @@ def main():
 if __name__ == "__main__":
     main()
 
-fruits = ['apple', 'banana', 'cherry']
 
-for i in range(len(fruits)):
-    fruit = fruits[i]  # Extra step to get the item
-    print(fruit[i])
+

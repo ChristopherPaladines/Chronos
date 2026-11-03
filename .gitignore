@@ -2,13 +2,9 @@
 venv/
 __pycache__/
 *.pyc
-<<<<<<< HEAD
-
-plan.md
-.DS_Store
-=======
 branch_structure.json
 temp_auto_push.bat
 temp_interactive_push.bat
 .gitignore
->>>>>>> e7fb30f6d0856ded4984935d5050ff23da1ee843
+plan.md
+.DS_Store
